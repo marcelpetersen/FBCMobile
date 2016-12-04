@@ -1,0 +1,20 @@
+<ion-header>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Network</ion-title>
+	</ion-navbar>
+</ion-header>
+
+
+<ion-content>
+	<ion-list>
+		<ion-item>
+			Status: <span [innerText]="status"></span>
+		</ion-item>
+		<ion-item>
+			Network connection: <span [innerText]="networkConnection"></span>
+		</ion-item>
+	</ion-list>
+</ion-content>

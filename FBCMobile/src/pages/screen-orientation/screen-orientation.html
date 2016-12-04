@@ -1,0 +1,26 @@
+<ion-header>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Screen Orientation</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+		<ion-item>
+			<ion-label>Choose Orientation:</ion-label>
+			<ion-select [(ngModel)]="orientation">
+				<ion-option value="landscape">Landscape</ion-option>
+				<ion-option value="portrait">Portrait</ion-option>
+			</ion-select>
+		</ion-item>
+		<p>
+			<button ion-button block color="secondary" (click)="setOrientation()">Set Orientation</button>
+		</p>
+		<p>
+			<button ion-button block color="secondary" (click)="unlockOrientation()">Allow user rotate</button>
+		</p>
+	</ion-list>
+</ion-content>

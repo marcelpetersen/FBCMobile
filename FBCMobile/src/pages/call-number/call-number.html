@@ -1,0 +1,20 @@
+<ion-header>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Call Number</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+		<ion-item>
+			<ion-label stacked>Type number...</ion-label>
+			<ion-input type="text" [(ngModel)]="number"></ion-input>
+		</ion-item>
+		<p>
+			<button ion-button block color="secondary" (click)="callNumber()">Make a Call</button>
+		</p>
+	</ion-list>
+</ion-content>

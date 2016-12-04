@@ -1,0 +1,19 @@
+<ion-header>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Date Picker</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+		<p>
+			<button ion-button block color="secondary" (click)="show()">Show Date Picker</button>
+		</p>
+		<ion-item>
+			<h2>Got date: {{gotDate | date}}</h2>
+		</ion-item>
+	</ion-list>
+</ion-content>
